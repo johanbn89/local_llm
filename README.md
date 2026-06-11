@@ -72,6 +72,10 @@ iterate until the task is done.
 
 ## LLM Skills And Instructions
 
+Skills are reusable instruction packages for agent workflows. They sit above
+the model and inside the agent/app/tool layer: the model still reasons, but the
+skill gives it task-specific steps, references, and sometimes helper scripts.
+
 Plain `.md` files are useful only when an agent knows to read them. Different
 coding agents discover skills and instructions in different ways.
 
