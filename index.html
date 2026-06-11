@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="src/styles.css">
+  </head>
+  <body>
+    <main class="app" aria-labelledby="app-title">
+      <section class="header">
+        <div>
+          <p class="eyebrow">Today</p>
+          <h1 id="app-title">Todo App</h1>
+        </div>
+        <div class="counter" aria-live="polite">
+          <span id="remaining-count">0</span>
+          <span>left</span>
+        </div>
+      </section>
+
+      <form id="todo-form" class="todo-form">
+        <label class="sr-only" for="todo-input">New todo</label>
+        <input
+          id="todo-input"
+          type="text"
+          autocomplete="off"
+          placeholder="Add a task..."
+          maxlength="120"
+        >
+        <button type="submit">Add</button>
+      </form>
+
+      <section class="toolbar" aria-label="Todo filters">
+        <div class="filters" role="group" aria-label="Filter todos">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="active">Active</button>
+          <button class="filter-button" type="button" data-filter="completed">Completed</button>
+        </div>
+        <button id="clear-completed" class="ghost-button" type="button">Clear completed</button>
+      </section>
+
+      <ul id="todo-list" class="todo-list" aria-label="Todos"></ul>
+
+      <p id="empty-state" class="empty-state">No tasks yet. Add one above.</p>
+    </main>
+
+    <script src="src/main.js"></script>
+  </body>
+</html>
