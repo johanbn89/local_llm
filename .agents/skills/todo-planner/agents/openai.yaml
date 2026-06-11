@@ -1,4 +1,0 @@
-interface:
-  display_name: "Todo Planner"
-  short_description: "Plan todo app features, schemas, and roadmaps."
-  default_prompt: "Use $todo-planner to plan a todo app before implementation."

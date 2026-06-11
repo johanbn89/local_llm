@@ -1,4 +1,0 @@
-interface:
-  display_name: "Skill Maintainer"
-  short_description: "Maintain this repo's skill collection."
-  default_prompt: "Use $skill-maintainer to review and update the repo-specific skills."

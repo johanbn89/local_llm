@@ -1,4 +1,0 @@
-interface:
-  display_name: "Skill Development"
-  short_description: "Create or update repo-specific Codex skills."
-  default_prompt: "Use $skill-development to create a new repo-specific skill."

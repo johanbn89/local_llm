@@ -1,4 +1,0 @@
-interface:
-  display_name: "Skill Architecture"
-  short_description: "Organize repo-specific skill folders."
-  default_prompt: "Use $skill-architecture to review this skill repository structure."

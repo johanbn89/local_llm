@@ -1,4 +1,0 @@
-interface:
-  display_name: "Skill Testing"
-  short_description: "Design prompt tests for skills."
-  default_prompt: "Use $skill-testing to create trigger and regression tests for this skill."

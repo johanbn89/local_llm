@@ -1,4 +1,0 @@
-interface:
-  display_name: "Skill Troubleshooting"
-  short_description: "Diagnose skill trigger and output problems."
-  default_prompt: "Use $skill-troubleshooting to debug why this skill is not triggering correctly."

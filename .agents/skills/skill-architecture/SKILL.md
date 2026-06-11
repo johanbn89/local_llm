@@ -13,9 +13,7 @@ Use this skill when arranging or reviewing how skills are stored in this reposit
 .agents/
 `-- skills/
     `-- <skill-name>/
-        |-- SKILL.md
-        `-- agents/
-            `-- openai.yaml
+        `-- SKILL.md
 ```
 
 ## Loading Model

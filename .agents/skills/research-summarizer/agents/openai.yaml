@@ -1,4 +1,0 @@
-interface:
-  display_name: "Research Summarizer"
-  short_description: "Summarize research with citations and uncertainty."
-  default_prompt: "Use $research-summarizer to summarize these sources and identify disagreements."

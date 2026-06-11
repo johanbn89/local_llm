@@ -1,4 +1,0 @@
-interface:
-  display_name: "Skill Standards"
-  short_description: "Review LLM skill writing quality."
-  default_prompt: "Use $skill-standards to improve this SKILL.md file."
