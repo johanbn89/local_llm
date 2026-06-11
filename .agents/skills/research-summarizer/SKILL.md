@@ -5,14 +5,13 @@ description: Summarize research from multiple sources with citations, uncertaint
 
 # Research Summarizer
 
-Use this skill to turn multiple research sources into a concise, evidence-aware
-summary.
+Use this skill to turn multiple research sources into a concise, evidence-aware summary.
 
 ## Workflow
 
 1. Identify the user's research question and desired depth.
 2. Gather or inspect the provided sources.
-3. Read `SOURCE_QUALITY.md` before judging reliability or comparing sources.
+3. Apply the source-quality checks from the `source-quality` skill when judging reliability.
 4. Separate findings from interpretation.
 5. Note disagreements, limitations, and uncertainty.
 6. Produce a concise synthesis with source references.
@@ -42,4 +41,3 @@ One or two practical takeaways.
 - Prefer primary sources over commentary when both are available.
 - Say when evidence is old, incomplete, or indirect.
 - Keep quotes short and use paraphrase for most content.
-

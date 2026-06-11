@@ -111,13 +111,39 @@ description: Summarize research from multiple sources with citations, uncertaint
 ---
 ```
 
-Optional supporting files can sit beside `SKILL.md`:
+This repository uses repo-specific Codex skills:
 
 ```text
-research-summarizer/
-|-- SKILL.md
-`-- SOURCE_QUALITY.md
+local_llm/
+|-- README.md
+|-- AGENTS.md
+`-- .agents/
+    `-- skills/
+        |-- research-summarizer/
+        |   `-- SKILL.md
+        |-- source-quality/
+        |   `-- SKILL.md
+        |-- skill-architecture/
+        |   `-- SKILL.md
+        |-- skill-development/
+        |   `-- SKILL.md
+        |-- skill-standards/
+        |   `-- SKILL.md
+        |-- skill-testing/
+        |   `-- SKILL.md
+        |-- skill-deployment/
+        |   `-- SKILL.md
+        |-- skill-manifest/
+        |   `-- SKILL.md
+        |-- skill-troubleshooting/
+        |   `-- SKILL.md
+        `-- skill-maintainer/
+            `-- SKILL.md
 ```
+
+Each former topic Markdown file is now a skill folder with its own `SKILL.md`.
+`README.md` remains the human-facing overview, and `AGENTS.md` remains broad
+repo guidance for coding agents.
 
 Codex can select a skill automatically from the prompt, or you can invoke one
 explicitly. In Codex, explicit skill invocation is usually done with
@@ -214,5 +240,5 @@ Claude Code skill = folder + SKILL.md in ~/.claude/skills or .claude/skills
 Claude Code manual invocation = /skill-name
 Copilot instruction = .github/copilot-instructions.md or .github/instructions/*.instructions.md
 AGENTS.md = broad repo guidance for coding agents
-Plain .md file = only useful if the agent is told to read it
+Plain .md file = only useful if the agent is told to read it; it is not a skill by itself
 ```

@@ -1,6 +1,11 @@
+---
+name: source-quality
+description: Assess source reliability, evidence strength, uncertainty, and red flags. Use when comparing sources, ranking evidence, reviewing research claims, or deciding whether a source is trustworthy.
+---
+
 # Source Quality
 
-Use these checks when comparing research sources.
+Use these checks when comparing research sources or judging evidence.
 
 ## Stronger Sources
 
@@ -30,4 +35,3 @@ Use plain language:
 - "The evidence is mixed."
 - "The sources agree on X but differ on Y."
 - "This appears plausible, but the available sources are indirect."
-

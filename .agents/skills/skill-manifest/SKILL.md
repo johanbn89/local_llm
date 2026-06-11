@@ -1,6 +1,11 @@
-# Skill Manifest Examples
+---
+name: skill-manifest
+description: Draft skill metadata, optional registry entries, and output contracts. Use when writing SKILL.md frontmatter, describing resources, or defining structured outputs for an LLM skill.
+---
 
-Examples of structured metadata an LLM platform might use to discover this skill.
+# Skill Manifest
+
+Use this skill when defining metadata or structured contracts for skills.
 
 ## Minimal Skill Metadata
 
@@ -18,10 +23,8 @@ description: Summarize research from multiple sources with citations and uncerta
   "name": "research-summarizer",
   "displayName": "Research Summarizer",
   "version": "0.1.0",
-  "entrypoint": "SKILL.md",
-  "resources": [
-    "SOURCE_QUALITY.md"
-  ]
+  "entrypoint": ".agents/skills/research-summarizer/SKILL.md",
+  "resources": []
 }
 ```
 
@@ -35,4 +38,3 @@ description: Summarize research from multiple sources with citations and uncerta
   "sources": ["url"]
 }
 ```
-

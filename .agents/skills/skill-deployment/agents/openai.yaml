@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Deployment"
+  short_description: "Install or publish LLM skills."
+  default_prompt: "Use $skill-deployment to move this skill into the right install location."

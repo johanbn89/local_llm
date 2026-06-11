@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Manifest"
+  short_description: "Draft skill metadata and output contracts."
+  default_prompt: "Use $skill-manifest to write metadata and a structured output contract."

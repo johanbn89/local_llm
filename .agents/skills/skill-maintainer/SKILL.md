@@ -1,12 +1,16 @@
-# Global Agent Instructions
+---
+name: skill-maintainer
+description: Maintain this repository's LLM skills. Use when editing, reviewing, reorganizing, or creating skills in .agents/skills for this repo.
+---
 
-Use these instructions when an LLM agent edits, reviews, or creates skills in
-this repository.
+# Skill Maintainer
+
+Use these instructions when editing, reviewing, or creating skills in this repository.
 
 ## Principles
 
 - Treat every skill as instructions for another model, not as user-facing docs.
-- Keep each `SKILL.md` concise; put detailed reference material inside that skill's folder when needed.
+- Keep each `SKILL.md` concise.
 - Write operational instructions, not marketing copy.
 - Prefer concrete workflows and examples over broad advice.
 - Avoid duplicating the same rule across multiple files.
@@ -14,22 +18,11 @@ this repository.
 
 ## Common Workflow
 
-1. Read the relevant file in `.agents/skills/<skill-name>/SKILL.md`.
-2. Read only extra files inside that skill folder when the task requires them.
+1. Read the relevant `.agents/skills/<skill-name>/SKILL.md`.
+2. Read only extra files inside that skill folder when needed.
 3. Update instructions or resources.
 4. Validate that the skill still has clear trigger conditions.
 5. Test the skill with one or more realistic prompts.
-
-## Repo-Specific Skill Layout
-
-Put Codex skills that belong to this repository under:
-
-```text
-.agents/skills/<skill-name>/SKILL.md
-```
-
-Keep `README.md` for human overview and `AGENTS.md` for broad repo guidance.
-Do not put standalone skill documents at the repository root.
 
 ## Skill Writing Style
 

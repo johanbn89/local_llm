@@ -1,0 +1,4 @@
+interface:
+  display_name: "Source Quality"
+  short_description: "Assess source reliability and evidence strength."
+  default_prompt: "Use $source-quality to compare these sources and call out reliability concerns."
