@@ -164,9 +164,29 @@ uncertainty.
 
 ## AGENTS.md
 
-Some coding agents read `AGENTS.md` as general repository guidance. This is
-useful for rules that apply to all work in the repo, but it is not the same as
-a Codex or Claude skill.
+Use `AGENTS.md`, plural, for general repository guidance for coding agents.
+`AGENT.md`, singular, is not the common convention.
+
+`AGENTS.md` is useful for rules that apply to all work in the repo, such as
+setup commands, test commands, code style, architecture notes, and project
+gotchas. It is not the same thing as a Codex or Claude skill.
+
+Common support:
+
+| Tool | Uses `AGENTS.md`? | Notes |
+| --- | --- | --- |
+| Codex | Yes | Codex reads global and project `AGENTS.md` files before doing work. |
+| GitHub Copilot coding agent | Yes | GitHub supports one or more `AGENTS.md` files in a repo; the nearest file takes precedence. |
+| VS Code Copilot Chat/Agent | Yes | VS Code can apply a root `AGENTS.md`; nested support can be enabled separately. |
+| Claude Code | Not as the main convention | Claude Code primarily uses `CLAUDE.md` for repo instructions and `SKILL.md` for skills. |
+| Other coding agents | Sometimes | `AGENTS.md` is an emerging shared convention, but each tool must explicitly support it. |
+
+Helpful docs:
+
+- Codex: https://developers.openai.com/codex/guides/agents-md
+- GitHub Copilot: https://docs.github.com/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot
+- VS Code Copilot: https://code.visualstudio.com/docs/agent-customization/custom-instructions
+- Shared convention: https://agents.md/
 
 ## Quick Rule
 
@@ -177,4 +197,3 @@ Copilot instruction = .github/copilot-instructions.md or .github/instructions/*.
 AGENTS.md = broad repo guidance for coding agents
 Plain .md file = only useful if the agent is told to read it
 ```
-
