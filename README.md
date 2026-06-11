@@ -119,33 +119,36 @@ local_llm/
 |-- AGENTS.md
 `-- .agents/
     `-- skills/
-        |-- research-summarizer/
+        |-- readme/
         |   `-- SKILL.md
-        |-- source-quality/
+        |-- contributing/
         |   `-- SKILL.md
-        |-- skill-architecture/
+        |-- architecture/
         |   `-- SKILL.md
-        |-- skill-development/
+        |-- development/
         |   `-- SKILL.md
-        |-- skill-standards/
+        |-- coding-standards/
         |   `-- SKILL.md
-        |-- skill-testing/
+        |-- ai-instructions/
         |   `-- SKILL.md
-        |-- skill-deployment/
+        |-- security/
         |   `-- SKILL.md
-        |-- skill-manifest/
+        |-- testing/
         |   `-- SKILL.md
-        |-- skill-troubleshooting/
+        |-- deployment/
         |   `-- SKILL.md
-        |-- todo-planner/
+        |-- changelog/
         |   `-- SKILL.md
-        `-- skill-maintainer/
+        |-- api/
+        |   `-- SKILL.md
+        `-- troubleshooting/
             `-- SKILL.md
 ```
 
-Each former topic Markdown file is now a skill folder with its own `SKILL.md`.
-`README.md` remains the human-facing overview, and `AGENTS.md` remains broad
-repo guidance for coding agents.
+Each skill explains one important project documentation file, how it is used,
+and gives an example of what that file can contain. `README.md` remains the
+human-facing overview, and `AGENTS.md` remains broad repo guidance for coding
+agents.
 
 Codex can select a skill automatically from the prompt, or you can invoke one
 explicitly. In Codex, explicit skill invocation is usually done with
