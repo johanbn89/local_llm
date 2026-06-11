@@ -115,6 +115,11 @@ research-summarizer/
 `-- SOURCE_QUALITY.md
 ```
 
+Codex can select a skill automatically from the prompt, or you can invoke one
+explicitly. In Codex, explicit skill invocation is usually done with
+`$skill-name`, such as `$research-summarizer`. In the Codex CLI, you can also
+use `/skills` to pick a skill from a menu.
+
 ## Claude Code Skills
 
 Claude Code also uses skill folders with a `SKILL.md` file.
@@ -133,6 +138,11 @@ or project-local:
 
 The same basic pattern applies: one folder per skill, with `SKILL.md` as the
 entrypoint and optional supporting files beside it.
+
+Claude Code skills can be selected automatically, and they can also be invoked
+manually with slash commands such as `/research-summarizer`. The command name
+usually comes from the skill folder location, not only from the frontmatter
+`name`.
 
 ## VS Code Copilot Instructions
 
@@ -161,6 +171,9 @@ applyTo: "**/*.md"
 When summarizing research, separate findings from interpretation and call out
 uncertainty.
 ```
+
+Copilot instruction files are not normally invoked like `/the-skill`. They are
+applied by Copilot based on the workspace and matching file patterns.
 
 ## AGENTS.md
 
@@ -192,7 +205,9 @@ Helpful docs:
 
 ```text
 Codex skill = folder + SKILL.md in ~/.codex/skills or .agents/skills
+Codex manual invocation = $skill-name, or /skills in the CLI
 Claude Code skill = folder + SKILL.md in ~/.claude/skills or .claude/skills
+Claude Code manual invocation = /skill-name
 Copilot instruction = .github/copilot-instructions.md or .github/instructions/*.instructions.md
 AGENTS.md = broad repo guidance for coding agents
 Plain .md file = only useful if the agent is told to read it
