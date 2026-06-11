@@ -137,6 +137,8 @@ local_llm/
         |   `-- SKILL.md
         |-- skill-troubleshooting/
         |   `-- SKILL.md
+        |-- todo-planner/
+        |   `-- SKILL.md
         `-- skill-maintainer/
             `-- SKILL.md
 ```
