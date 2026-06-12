@@ -163,37 +163,6 @@ manually with slash commands such as `/research-summarizer`. The command name
 usually comes from the skill folder location, not only from the frontmatter
 `name`.
 
-## VS Code Copilot Instructions
-
-VS Code Copilot does not use `SKILL.md` as a general skill system. It uses
-custom instruction files.
-
-Use this file for project-wide Copilot guidance:
-
-```text
-<repo>/.github/copilot-instructions.md
-```
-
-Use path-specific instruction files like this:
-
-```text
-<repo>/.github/instructions/research.instructions.md
-```
-
-Example:
-
-```markdown
----
-applyTo: "**/*.md"
----
-
-When summarizing research, separate findings from interpretation and call out
-uncertainty.
-```
-
-Copilot instruction files are not normally invoked like `/the-skill`. They are
-applied by Copilot based on the workspace and matching file patterns.
-
 ## AGENTS.md
 
 Use `AGENTS.md`, plural, for general repository guidance for coding agents.
@@ -208,17 +177,8 @@ Common support:
 | Tool | Uses `AGENTS.md`? | Notes |
 | --- | --- | --- |
 | Codex | Yes | Codex reads global and project `AGENTS.md` files before doing work. |
-| GitHub Copilot coding agent | Yes | GitHub supports one or more `AGENTS.md` files in a repo; the nearest file takes precedence. |
-| VS Code Copilot Chat/Agent | Yes | VS Code can apply a root `AGENTS.md`; nested support can be enabled separately. |
 | Claude Code | Not as the main convention | Claude Code primarily uses `CLAUDE.md` for repo instructions and `SKILL.md` for skills. |
 | Other coding agents | Sometimes | `AGENTS.md` is an emerging shared convention, but each tool must explicitly support it. |
-
-Helpful docs:
-
-- Codex: https://developers.openai.com/codex/guides/agents-md
-- GitHub Copilot: https://docs.github.com/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot
-- VS Code Copilot: https://code.visualstudio.com/docs/agent-customization/custom-instructions
-- Shared convention: https://agents.md/
 
 ## Quick Rule
 
@@ -227,7 +187,6 @@ Codex skill = folder + SKILL.md in ~/.codex/skills or .agents/skills
 Codex manual invocation = $skill-name, or /skills in the CLI
 Claude Code skill = folder + SKILL.md in ~/.claude/skills or .claude/skills
 Claude Code manual invocation = /skill-name
-Copilot instruction = .github/copilot-instructions.md or .github/instructions/*.instructions.md
 AGENTS.md = broad repo guidance for coding agents
 Plain .md file = only useful if the agent is told to read it; it is not a skill by itself
 ```
