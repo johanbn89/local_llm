@@ -54,22 +54,6 @@ https://ollama.com/library/llama3.1
 
 You need to install Ollama first before using it as a backend.
 
-Another alternative is to use VS Code and install the Microsoft Foundry Toolkit
-extension. Press `Ctrl + Alt + L` to open the chat window, then choose one of
-the local LLMs.
-
-<img width="457" height="259" alt="image" src="https://github.com/user-attachments/assets/736bffd0-a70b-466d-ada2-198a5288b6b8" />
-
-Remark:
-Agent mode means the AI can do more than just answer questions.
-
-In normal chat mode, you ask something and the model replies with text.
-
-In agent mode, the model can act more like a coding assistant that works
-through a task. In VS Code/Copilot, it can inspect your workspace, decide which
-files need changes, suggest or make edits, propose terminal commands, and
-iterate until the task is done.
-
 ## LLM Skills And Instructions
 
 Skills are reusable instruction packages for agent workflows. They sit above
