@@ -42,10 +42,10 @@ VS Code Copilot agent mode, Claude Code, Codex, Continue, Cline, Aider, etc.
 ```
 
 There are many ways to run and interact with an LLM locally, for example
-through VS Code, the Codex app, or the Claude Code desktop app.
+through VS Code with eg the codex og claude extension, the Codex desktop app, or the Claude Code desktop app.
 
 For desktop applications, you can often change the model by switching the
-backend. One common backend is Ollama, a framework for running models locally.
+backend. One common backend is Ollama(optimized for CPU use), a framework for running models locally.
 
 For example, you can use Ollama to run a Llama model and connect it to
 applications that support local model backends:
