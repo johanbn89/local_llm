@@ -30,33 +30,7 @@ We used two agent skills to shape the session.
 
 The transcript below keeps the visible user/Codex conversation. Tool calls and command output are omitted so the blog stays focused on the learning process.
 
-### 1. Starting The Todo App Lesson
-
-**User**
-
-Use `ponytail` and `teachback`.
-
-We are going to build a simple to do app. Learn me how to do it.
-
-**Codex**
-
-I’ll use `ponytail` for the smallest thing that works and `teachback` so the plan teaches as we go. I’m going to first inspect the repo shape and read those skill instructions, then I’ll ask only the choices that actually matter.
-
-The repo is already a tiny browser app shape: `index.html`, `src/main.js`, and `src/styles.css`. I’m reading those now so the plan fits what’s here instead of inventing a framework we don’t need.
-
-Small surprise: this repo already contains a working vanilla HTML/CSS/JS todo app. That’s good for teaching: we can either learn by rebuilding it from scratch in the same style, or by walking through what’s already here and then making one small improvement.
-
-**Codex**
-
-Proposed plan:
-
-- Build the todo app as a tiny vanilla web app: `index.html`, `src/styles.css`, and `src/main.js`.
-- Use the existing repo app shape as the reference, but teach it as a rebuild from first principles.
-- Keep it minimal: no framework, no build step, no new dependencies, no backend.
-- Build one layer at a time: HTML, CSS, JavaScript state, events, rendering, and persistence.
-- After each stage, pause for a short teachback question before moving on.
-
-### 2. Deleting The Existing App And Planning The Files
+### 1. Deleting The Existing App And Planning The Files
 
 **User**
 
@@ -106,7 +80,7 @@ Build order:
 7. Add `localStorage`.
 8. Do a final manual test.
 
-### 3. Implementing The Scratch Version
+### 2. Implementing The Scratch Version
 
 **User**
 
@@ -172,7 +146,7 @@ Verified:
 
 Skipped: filters, editing, counters, due dates, frameworks. Add those only after this version feels obvious.
 
-### 4. Deleting The App Again
+### 3. Deleting The App Again
 
 **User**
 
